@@ -1,0 +1,128 @@
+.event-list-container h2 {
+  margin: 0 0 15px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.crash-count {
+  background: #dc3545;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.event-table-container {
+  overflow: auto;
+  flex: 1;
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.event-table th,
+.event-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.event-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+  position: sticky;
+  top: 0;
+}
+
+.event-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.event-table th.sortable:hover {
+  background-color: #e9ecef;
+}
+
+.event-table th.sortable::after {
+  content: ' ↕';
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+
+.event-table th.sortable.asc::after {
+  opacity: 1;
+  content: ' ↑';
+}
+
+.event-table th.sortable.desc::after {
+  opacity: 1;
+  content: ' ↓';
+}
+
+.event-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.event-table tbody tr.selected {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.event-table tbody tr.selected td {
+  color: white;
+}
+
+.event-table .event-error {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.event-table .event-warning {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.event-table .event-info {
+  color: #17a2b8;
+  font-weight: bold;
+}
+
+.event-table .event-critical {
+  color: #6f42c1;
+  font-weight: bold;
+}
+
+.message-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+}
+
+.no-events {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+}

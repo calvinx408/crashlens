@@ -1,0 +1,167 @@
+.perf-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 20px;
+  overflow: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+.perf-error {
+  background: #fde8e8;
+  color: #c62828;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.perf-hint {
+  color: #5f6b7a;
+  font-style: italic;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 14px;
+}
+
+.chart-card {
+  background: #fff;
+  border: 1px solid #d9e0e7;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chart-header h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.chart-values {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.chart-current {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 12px;
+  font-size: 0.8rem;
+  color: #5f6b7a;
+  margin: 4px 0;
+}
+
+.chart-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  margin-right: 4px;
+}
+
+.chart-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 6px;
+}
+
+.grid-line {
+  stroke: #e5e9ee;
+  stroke-width: 1;
+}
+
+.axis-text {
+  font-size: 11px;
+  fill: #5f6b7a;
+}
+
+.chart-empty {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5f6b7a;
+  font-style: italic;
+}
+
+.chart-note {
+  margin: 4px 0 0;
+}
+
+.perf-bottom {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) minmax(300px, 2fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.perf-procs {
+  background: #fff;
+  border: 1px solid #d9e0e7;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.perf-procs h4 {
+  margin: 0 0 8px;
+}
+
+.perf-procs table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.perf-procs td {
+  padding: 5px 4px;
+  border-bottom: 1px solid #eef1f4;
+}
+
+.perf-procs .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.perf-ai {
+  background: #fff;
+  border: 1px solid #d9e0e7;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 0;
+}
+
+.note-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+  margin: 8px 0;
+}
+
+.note-label textarea {
+  font: inherit;
+  padding: 6px 8px;
+  border: 1px solid #d9e0e7;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+@media (max-width: 768px) {
+  .perf-bottom {
+    grid-template-columns: 1fr;
+  }
+}
