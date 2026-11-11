@@ -1,4 +1,4 @@
-# Windows Event Debugger
+# CrashLens
 
 A local, readable dashboard for figuring out why your Windows PC crashed, froze, or got slow.
 It reads your real Windows event logs and live performance counters, explains them in plain
@@ -46,7 +46,7 @@ an Ollama analysis of the slowdown.
 2. Double-click **`start.bat`**. The first run installs dependencies, which takes a minute.
 3. Two windows open (the API and the UI), and your browser opens http://localhost:3000.
 
-Close the two **Event Debugger** windows to stop it.
+Close the two **CrashLens** windows to stop it.
 
 ## Start automatically at login
 
@@ -55,7 +55,7 @@ The app can start quietly when you sign in to Windows, with no windows or browse
 - Run `start.bat --quiet` once to test it. It launches minimized, with no browser.
 - To enable it at login, create a shortcut to `start.bat` with the argument `--quiet` in
   your Startup folder. Press `Win + R`, type `shell:startup`, and put the shortcut there.
-  (The setup for this project already created one, named `Event Debugger.lnk`.)
+  (The setup for this project already created one, named `CrashLens.lnk`.)
 - To disable it, delete that shortcut from the Startup folder.
 
 Note: this starts at **sign-in**, not at the very first power-on before you log in.

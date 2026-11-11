@@ -97,7 +97,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Windows Event Debugger</h1>
+        <h1>CrashLens</h1>
         <p>Find what went wrong, explained in plain language, with an optional local AI explanation</p>
       </header>
 

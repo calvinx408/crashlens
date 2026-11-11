@@ -1,5 +1,5 @@
 {
-  "name": "windows-event-debugger",
+  "name": "crashlens",
   "version": "1.0.0",
   "description": "A UI for debugging Windows events",
   "main": "index.js",
