@@ -130,5 +130,9 @@ and an optional `crashRelated` flag.
 
 ## License
 
-Proprietary. All rights reserved. See [LICENSE](LICENSE). No permission is granted to copy,
-modify, or redistribute this software without the author's written permission.
+CrashLens is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE).
+You may use, modify, and share it for noncommercial purposes. Selling it, or using it in a
+commercial product or service, is not permitted without a separate commercial license from the author.
+
+Contributions are welcome. By submitting a contribution, you agree that it may be distributed
+under this license.
