@@ -130,4 +130,5 @@ and an optional `crashRelated` flag.
 
 ## License
 
-To be decided by the author.
+Proprietary. All rights reserved. See [LICENSE](LICENSE). No permission is granted to copy,
+modify, or redistribute this software without the author's written permission.
